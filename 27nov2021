@@ -1,0 +1,77 @@
+#include <iostream>
+
+using namespace std;
+
+void innerloop(int i){
+    
+    cout << "inner loop";
+    
+    int line_length = 10;
+ 
+    for (int j=0; j < line_length; j++){
+     
+        if (
+            (i==1)
+            &&
+            ((j==0)||(j==1))
+        
+        )
+        
+        {
+            cout<<"/";
+        } // if (int j=0; j<line_length;j++)
+        
+        else
+        
+        { // if (int j=0; j<line_length;j++)
+            
+            
+            if (
+                (i==2)
+                &&
+                ((j==0)||(j==1)||(j==2)||(j==3))
+        
+            )
+        
+            {
+                cout<<"/";
+            }
+            else
+            {
+                cout<<"!"; 
+                //cout<< i;
+            }
+            
+                 
+                
+        } // if (int j=0; j<line_length;j++)
+        
+        
+            
+     } // for (int j=0; j < line_length; j++)
+
+    
+} // end of inner loop function
+
+
+int main()
+{
+    
+ 
+ for (int i1=0; i1 < 4; i1++){
+     
+    cout << "\n";
+    
+    innerloop(i1);
+     
+     
+ } // for (int i=0; i < 6; i++)
+
+ cout<<"\n\n\nHello World";
+
+ return 0;
+} // main
+
+
+
+
